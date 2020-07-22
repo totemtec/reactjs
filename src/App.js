@@ -1,25 +1,31 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/react-game">三连棋</Link>
+        </li>
+        <li>
+          <Link to="/hook/example">Hook钩子用法</Link>
+        </li>
+        <li>
+          <Link to="/context/dynimac">动态修改Context</Link>
+        </li>
+        <li>
+          <Link to="/context/update">在嵌套组件中更新 Context</Link>
+        </li>
+        <li>
+          <Link to="/context/multi">消费多个 Context</Link>
+        </li>
+      </ul>
+    </nav>
+  </div>
   );
 }
 
