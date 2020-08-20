@@ -9,7 +9,7 @@ function App() {
     <nav>
       <ul>
         <li>
-          <Link to="/react-game">三连棋</Link>
+          <Link to="/react-game">三连棋，官方教程</Link>
         </li>
         <li>
           <Link to="/hook/example">Hook钩子用法</Link>
